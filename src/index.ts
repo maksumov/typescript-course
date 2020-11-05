@@ -2,8 +2,10 @@ class Sorter {
   constructor(public collection: number[]) {}
 
   sort() {
-    for (let i = 0; i < this.collection.length - 1; i++) {
-      for (let j = 0; j < this.collection.length - 1; j++) {
+    const { length } = this.collection;
+
+    for (let i = 0; i < length - 1; i++) {
+      for (let j = 0; j < length - i - 1; j++) {
         if (this.collection[j] > this.collection[j + 1]) {
           const a = this.collection[j];
           this.collection[j] = this.collection[j + 1];
