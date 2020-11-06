@@ -1,19 +1,16 @@
-// import { CharactersCollection } from "./models/CharactersCollection";
+import { CharactersCollection } from "./models/CharactersCollection";
 import { LinkedList } from "./models/LinkedList";
-// import { NumbersCollection } from "./models/NumbersCollection";
-import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./models/NumbersCollection";
 
-// const numbersCollection = new NumbersCollection([10, 20, -3, 5]);
-// const sorter = new Sorter(numbersCollection);
-// console.log("numbersCollection.data", numbersCollection.data);
-// sorter.sort();
-// console.log("numbersCollection.data", numbersCollection.data);
+const numbersCollection = new NumbersCollection([10, 20, -3, 5]);
+console.log(`numbersCollection before sort: ${numbersCollection.data}`);
+numbersCollection.sort();
+console.log(`numbersCollection after sort: ${numbersCollection.data}`);
 
-// const charCollection = new CharactersCollection("CharactersCollection");
-// const sorter2 = new Sorter(charCollection);
-// console.log("charCollection", charCollection.data);
-// sorter2.sort();
-// console.log("charCollection", charCollection.data);
+const charCollection = new CharactersCollection("Xaayb");
+console.log(`charCollection before sort: "${charCollection.data}"`);
+charCollection.sort();
+console.log(`charCollection after sort: "${charCollection.data}"`);
 
 const linkedList = new LinkedList();
 linkedList.add(500);
@@ -21,8 +18,8 @@ linkedList.add(-10);
 linkedList.add(-4);
 linkedList.add(12);
 
+console.log("linkedList before sort:");
 linkedList.print();
-
-const sorter = new Sorter(linkedList);
-sorter.sort();
+console.log("linkedList after sort:");
+linkedList.sort();
 linkedList.print();
