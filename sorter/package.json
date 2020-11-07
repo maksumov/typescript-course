@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/maksumov/typescript-course/issues"
   },
-  "homepage": "https://github.com/maksumov/typescript-course#readme",
+  "homepage": "https://github.com/maksumov/typescript-course#readme",    
   "devDependencies": {
     "nodemon": "^2.0.6",
     "typescript": "^4.0.5"
