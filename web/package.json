@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksumov/typescript-course.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maksumov/typescript-course/issues"
+  },
+  "homepage": "https://github.com/maksumov/typescript-course#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.5"
+  }
+}
