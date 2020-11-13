@@ -2,8 +2,14 @@ import { User } from "./models/User";
 
 const user = new User({ name: "Вася", age: 22 });
 
-user.set({ name: "Петя" });
-user.set({ age: 999 });
+user.on("change", () => {
+  console.log("Пу-ру-ру-ру");
+});
+user.on("change", () => {
+  console.log("Трам-пам-пам");
+});
+user.on("click", () => {
+  console.log("Тру-ля-ля");
+});
 
-console.log(user.get("name"));
-console.log(user.get("age"));
+console.log(user);
