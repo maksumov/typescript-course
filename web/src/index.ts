@@ -2,12 +2,12 @@ import { User } from './models/User';
 
 // const user = new User({ id: 1 });
 // user.set({ name: "Non-Vasya", age: 9999 });
-const user = new User({ name: 'Ivan', age: 0 });
+const user = new User({ id: 1 });
 
 console.log(user.get('name'));
 
 user.on('change', () => {
-  console.log('User was changed, we probably need to update some HTML');
+  console.log(user);
 });
 
-user.set({ name: 'New Name' });
+user.fetch();
