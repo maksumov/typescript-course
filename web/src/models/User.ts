@@ -1,6 +1,6 @@
-import { Attributes } from "./Attributes";
-import { Eventing } from "./Eventing";
-import { Sync } from "./Sync";
+import { Attributes } from './Attributes';
+import { Eventing } from './Eventing';
+import { Sync } from './Sync';
 
 export interface UserProps {
   id?: number;
@@ -8,7 +8,7 @@ export interface UserProps {
   age?: number;
 }
 
-const rootUrl = "http://localhost:3000/users";
+const rootUrl = 'http://localhost:3000/users';
 
 export class User {
   public sync: Sync<UserProps> = new Sync<UserProps>(rootUrl);
