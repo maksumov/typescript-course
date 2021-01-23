@@ -21,7 +21,7 @@
   "devDependencies": {
     "json-server": "^0.16.2",
     "parcel-bundler": "^1.12.4",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.3"
   },
   "dependencies": {
     "axios": "^0.21.0"
