@@ -20,14 +20,17 @@ export class User {
   }
 
   get get() {
+    // return this.attributes.get.bind(this.attributes);
     return this.attributes.get;
   }
 
   get on() {
+    // return this.events.on.bind(this.events);
     return this.events.on;
   }
 
   get trigger() {
+    // return this.events.trigger.bind(this.events);
     return this.events.trigger;
   }
 }
