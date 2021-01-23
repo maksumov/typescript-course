@@ -33,4 +33,9 @@ export class User {
     // return this.events.trigger.bind(this.events);
     return this.events.trigger;
   }
+
+  set(update: UserProps): void {
+    this.attributes.set(update);
+    this.events.trigger('change');
+  }
 }
