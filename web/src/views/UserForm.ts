@@ -1,5 +1,6 @@
+import { User, UserProps } from '../models/User';
 import { View } from './View';
-export class UserForm extends View {
+export class UserForm extends View<User, UserProps> {
   template(): string {
     return `
       <div>
@@ -22,6 +23,7 @@ export class UserForm extends View {
 
   onSetAgeClick = (): void => {
     this.model.setRandomAge();
+    console.log('Random age was set');
   };
 
   onSetNameClick = (): void => {
