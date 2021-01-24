@@ -1,6 +1,6 @@
 import { AxiosPromise, AxiosResponse } from 'axios';
 
-type Callback = () => {};
+type Callback = () => void;
 
 interface ModelAttributes<T> {
   get<K extends keyof T>(key: K): T[K];
