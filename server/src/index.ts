@@ -1,15 +1,10 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import { router } from './routes/loginRoutes';
 
 const PORT = 3000;
 const app = express();
 
-app.get('/', (req: Request, res: Response) => {
-  res.send(`
-  <div>
-    <h1>Hi there!</h1>
-  </div>
-  `);
-});
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`Server started at port ${PORT}`);
