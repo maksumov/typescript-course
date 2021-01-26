@@ -1,3 +1,4 @@
+@classDecorator
 class Boat {
   @testDecoreator
   color: string = 'red';
@@ -18,6 +19,12 @@ class Boat {
       console.log('nothing');
     }
   }
+
+  sample: number = 12;
+}
+
+function classDecorator(constructor: typeof Boat): void {
+  console.log(constructor.toString());
 }
 
 function parameterDecorator(target: Boat, key: string, index: number) {
