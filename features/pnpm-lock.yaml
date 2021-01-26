@@ -1,5 +1,6 @@
 devDependencies:
-  ts-node: 9.1.1
+  ts-node: 9.1.1_typescript@4.1.3
+  typescript: 4.1.3
 lockfileVersion: 5.2
 packages:
   /arg/4.1.3:
@@ -37,13 +38,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
-  /ts-node/9.1.1:
+  /ts-node/9.1.1_typescript@4.1.3:
     dependencies:
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
       source-map-support: 0.5.19
+      typescript: 4.1.3
       yn: 3.1.1
     dev: true
     engines:
@@ -53,6 +55,13 @@ packages:
       typescript: '>=2.7'
     resolution:
       integrity: sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
+  /typescript/4.1.3:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
   /yn/3.1.1:
     dev: true
     engines:
@@ -61,3 +70,4 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   ts-node: ^9.1.1
+  typescript: ^4.1.3
