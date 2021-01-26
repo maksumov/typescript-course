@@ -1,4 +1,5 @@
 class Boat {
+  @testDecoreator
   color: string = 'red';
 
   get formattedColor(): string {
@@ -26,4 +27,7 @@ function logError(errorMessage: string) {
   };
 }
 
-new Boat().pilot();
+function testDecoreator(target: any, key: string): void {
+  console.log(target);
+  console.log(key);
+}
