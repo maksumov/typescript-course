@@ -4,10 +4,13 @@ const plane = {
   color: 'red',
 };
 
-Reflect.defineMetadata('note', 'hi there', plane);
+Reflect.defineMetadata(
+  'note',
+  'This is note on an object property',
+  plane,
+  'color'
+);
 
-console.log('plane', plane);
+const note = Reflect.getMetadata('note', plane, 'color');
 
-const note = Reflect.getMetadata('note', plane);
-
-console.log('note', note);
+console.log('note:>>', note);
