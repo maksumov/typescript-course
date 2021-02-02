@@ -1,24 +1,23 @@
 import { Request, Response } from 'express';
+import { controller } from './decorators/controllers';
 import { get } from './decorators/routes';
 
-@controller('/')
+@controller('')
 class LoginController {
   @get('/login')
   getLogin(req: Request, res: Response): void {
-    if (req.session?.loggedIn === true) {
-      res.send(`
-      <div>
-        <div>You are logged in</div>
-        <a href="/logout">Logout</a>
-      </div>
+    res.send(`
+      <form method="post">
+        <div>
+          <label>Email</label>
+          <input name="email">
+        </div>
+        <div>
+          <label>Password</label>
+          <input name="password" type="password">
+        </div>
+        <button>Submit</button>
+      </form>
     `);
-    } else {
-      res.send(`
-      <div>
-        <div>You are not logged in</div>
-        <a href="/login">Login</a>
-      </div>
-    `);
-    }
   }
 }
