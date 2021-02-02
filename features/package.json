@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node decorators.ts"
+    "start": "ts-node metadata.ts"
   },
   "keywords": [],
   "author": "",
