@@ -3,6 +3,11 @@ import { bodyValidator, controller, get, post } from './decorators';
 
 @controller('/auth')
 class LoginController {
+  @get('/')
+  add(a: number, b: number): number {
+    return a + b;
+  }
+
   @get('/login')
   getLogin(req: Request, res: Response): void {
     res.send(`
