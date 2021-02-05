@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchTodos, Todo } from '../actions/index';
+import { fetchTodos, Todo } from '../actions';
 import { StoreState } from '../reducers';
 
 interface AppProps {
