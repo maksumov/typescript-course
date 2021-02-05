@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Dispatch } from 'redux';
+import { ActionTypes } from './types';
 
 interface Todo {
   id: number;
@@ -14,7 +15,7 @@ export const fetchTodos = () => {
     const response = await axios.get<Todo[]>(url);
 
     dispatch({
-      type: 'FETCH_TODOS',
+      type: ActionTypes.fetchTodos,
       payload: response.data,
     });
   };
